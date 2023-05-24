@@ -1,4 +1,4 @@
-# Module Data Science
+# 1° Sesion: Module Data Science
 
 ## First Lesson
 
@@ -104,5 +104,75 @@ Es el estuido de algoritmos que permiten pronosticar el comportamiento de determ
 Hoy día apostamos a perfiles mucho mas cross que puedan operar en mas de un rol de los descriptos arriba. 
 
 **Fin de la primera clase.**
+
+---------------------------------------
+
+# 2° Sesión: Data Discovery (1° Parte):
+
+Mas info sobre la sesión en [PPT de la sesión](DataLane%20de%20Data%20Science%20Presentaci%C3%B3n.pptx).
+
+Data Science: project pipeline:
+
+Metodologia CRISP-DM: 
+
+- Entendimiento del negocio
+- Entendimiento de la data
+- Preparación de la data
+- Modelamiento o modelado de la data
+- Evaluación
+- Vuelvo al entendimiento del negocio y hago de nuevo el ciclo hasta que estoy listo para
+- Deployment
+
+Data Science Project in Meli:
+
+- Inducción de negocio: Estimar el impacto potencial de la iniciativa
+- Target: definición de un accionable de negocio y objetivo
+- Data: integración de fuentes de datos y creación de features. La data responde a mi target? 
+- Modelo ML: Entrenamiento, pueba y valor incremental. ¿Hasta donde puede escalar este modelo? 
+- Producción: Monitoreo y Reentrenamiento
+- Medición: Validación del target y medición de impacto, visualización
+- Cambio Cultural: Impulsar las decisiones basadas en el producto. Que el mismo sirva para el negocio y sea parte de la cultura del negocio en si misma. 
+
+Generación de hipotesis: (tres partes)
+
+1- Idea
+2- Problem Statement:
+  A- Negocio: ¿Que deberiamos poder resolver? Key Question, Actionable, KPI´s
+  B- Data & Analytics: ¿Tenemos los datos sufiencientes? (factibilidad) ¿Existe una solución actual para el problema? (bencmark) ¿Como priorizar el problema? ¿Que es urgente y que importante? (Prioritization) y el ROI
+3- Hypotesis
+
+### Problem Statement: Negocio
+
+- Key Question: 
+  
+  debe tener un proposito, un que? un como? y un cuando? SMART goals. La respuesta a mi pregunta debe tener un accionable en función de esa respuesta. 
+
+- Actionable
+
+                Actionable
+              --------------
+                 Insights
+          ---------------------
+                Information
+      -----------------------------
+                   Data
+
+Un accionable debe tener contexto, relevancia, especificidad, claridad y novedad. 
+
+- KPI: Key Performance Indicator: Se definen al comienzo de un proyecto y son una guia a largo plazo para orientar los esfuerzos. A veces ya vienen junto con el requerimiento del negocio y a veces hay que crearlos junto con la solución. 
+
+Tips: dedicarle tiempo al comienzo del proyecto. Trabajarlos en forma conjunta con el negocio porque ellos son los especialistas en su accionar. 
+
+### Problem Statement: Data & Analytics
+
+- Factibilidad: Es posible conseguir los datos que el negocio necesita? Que casos de uso voy a considerar? Que fuentes de datos voy a usar? Que sites o Business Unit voy a considerar? 
+- Benchmark: Comparación de resultados con una solución previa. Al igual que los KPI´s se debe mirar al comienzo del proyecto. 
+- Prioritization: Matriz de Eisenhower cruza urgencia e importancia y es una buena forma de resolver nuestra priorización. 
+
+<img src="./images/MATRIZ-DE-EISENHOWER.jpg">
+
+- ROI: Return on investment: Requiere interaccion con el negocio y representa el compromiso de la iniciativa. A mayor ROI debería haber mayor beneficio. 
+
+
 
 

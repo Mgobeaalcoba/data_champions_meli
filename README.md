@@ -1,4 +1,4 @@
-# 1° Sesion: Module Data Science
+# 1° Sesion: Module Data Science (17.5.2023)
 
 ## First Lesson
 
@@ -107,7 +107,7 @@ Hoy día apostamos a perfiles mucho mas cross que puedan operar en mas de un rol
 
 ---------------------------------------
 
-# 2° Sesión: Data Discovery (1° Parte):
+# 2° Sesión: Data Discovery (24.5.2023):
 
 Mas info sobre la sesión en [PPT de la sesión](DataLane%20de%20Data%20Science%20Presentaci%C3%B3n.pptx).
 
@@ -172,6 +172,55 @@ Tips: dedicarle tiempo al comienzo del proyecto. Trabajarlos en forma conjunta c
 <img src="./images/MATRIZ-DE-EISENHOWER.jpg">
 
 - ROI: Return on investment: Requiere interaccion con el negocio y representa el compromiso de la iniciativa. A mayor ROI debería haber mayor beneficio. 
+
+-----------------------------------------
+
+# 3° Sesion: ML Canvas (31.5.2023)
+
+Es un resumen de la iniciativa que nuclea 
+
+- Goal o Propuesta de Valor
+- Learn o Lo que necesitamos aprender para implementar la solución
+- Predict o Que vamos a predecir
+- Evaluate o Que tan bien estuvo esta solución
+
+### Manos a la obra
+
+- Data pre processing,
+- Exploratory Data Analysis
+- Feature Engineering
+
+
+- Data Preprocesing:
+En Data pre procesing a veces se usan algoritmos ya construidos para pre procesar los datos... El ciclo de pre procesing es:; Data integration, Data Transformation, Data Reduction or Dimension Reduction y Data Cleaning.
+
+- Exploratory Data Analysis (EDA):
+Consiste en conocer el dataset, filas, columnas, medidas de tendencia central. Se puede hacer con Pandas-Python o se puede hacer directamente en Tableau, etc. Hacer un EDA es todo un arte. Tengo varios EDA´s en mi portfolio en Github para consultar realizados en Pandas Python. Dependiendo el tipo de datos siempre nos vamos a encontrar con gráficas que dan muchas mas información que otros. 
+
+- Recencia: Cada cuanto ocurre un evento y cuanto dura
+- Frecuencia: Cuantas veces un usuario hizo algo. 
+- Valores: Que tanto, pero en valores, no frecuencias, se hace algo. Ej: Cuanto dinero se tiene en MP?
+- Juntar columnas si es que vemos correlación entre las mismas. 
+
+- Feature Engineering: Tal vez el punto mas complejo del "manos a la obra" en data science...
+¿Cuales de esos features me sirven para mi modelo? Meto feature, pruebo el modelo, decido si lo dejo o saco, etc. Dejo los datos con los nombres que tienen? Transformo variables numericas a categoricas para que sea mas facil para mi modelo? etc. 
+
+- Feature importance: cual feature va aportar mas a mi solución. El dato es importante para mi modelo? Ejemplo. Problema del titanic. La mayoria de los sobrevivientes del titanic fueron mujeres. ¿Que hago con eso? Me suma a un modelo para predecir supervivencia? 
+- Feature extraction
+- Feature Selection
+- Feature construction
+- Feature learning
+
+Todas estas necesitan mucho brainstorming y un equipo muy multidisciplinario. Dado que se requiere mucho conocimiento del negocio ademas del conocimiento tecnico. 
+
+Tecina de Feature Engineering mas usada en Meli:
+**ABT, Analytical Base Table**: Es como un stock de features que cualquiera puede consumir desde cualquier ambiente de python de Meli. Es una librería que se puede usar en BigQuery y Python o Dataiku. Usando ABT todos estamos hablando el mismo idioma, usando las mismas features. Si necesitamos otra feature podemos pedirla para sumarla. 
+
+-------------------------------------------------------
+
+
+
+
 
 
 

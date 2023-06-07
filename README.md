@@ -218,6 +218,73 @@ Tecina de Feature Engineering mas usada en Meli:
 
 -------------------------------------------------------
 
+# 4° Season: Data Science / Classification Algoriths
+
+Problemas a abordar en Machine Learning. 
+
+Antes vimos como es la estrategia de enfrentamiento ante un problema de data science. Como es la estrategía, el canvas, el modelo de enfrentamiento frente a un problema de data science. 
+
+Ahora vamos a adentrarnos en el mundo de data science y vamos a hablar de clasificación. 
+
+- Definición
+- Tipos
+- Algoritmos y librerias
+- Metricas
+- Etc
+
+**Definición**: modelo "supervisado": le pasamos al algoritmos elementos clasificados y etiquetados para entrenar el modelo (información previa) para que luego el algoritmo funcione como una "maquina etiquetadora" para nuevos elementos. 
+
+**Tipos de clasificación**:
+- Binaria: etiqueta que puede definirse de dos posibles formas: 0 o 1. Convencionalmente 0 es el estado normal y 1 es el que mas nos interesa. Es una convención arbitraria pero muy usada. 
+- Multi-class Classification: 2 o mas etiquetas
+- Imbalanced Classification: Hay 2 o mas etiquetas pero cada elemento puede tener mas de 1 etiqueta. Problema de clasificación multi clase y multi etiqueta. 
+
+**Librerías**:
+Existen librerías que ya tienen casi todos los algoritmos de machine learning existentes por lo que hoy ya practicamente no son necesarios programarlos. 
+- Scikit-learn
+- XGBoost
+- LightGBM
+- CatBoost
+
+**Algoritmos**
+Ver lista de algoritmos en PPT de esta clase en la web de Data Champions
+Ej:
+- Regresión logistica: De los mas simples, rapidos, eficientes (verdadero caballito de batalla)
+- Naive Bayes (Se uso mucho para clasificación de spam por ejemplo)
+- K Neighbors Classifier (similitud)
+- Decisión Tree Classifier
+- Etc...
+
+Leer el link a **5 types of classification algorithms in machine learning**
+
+**Evaluación del modelo**
+
+¿Como evaluamos la calidad de un modelo o algoritmo para resolver un problema de ciencia de datos? 
+
+Errores posibles:
+- Error de clasificación: **Predecir algo que no era real.** Algo como 1 cuando en realidad era 0 o viceversa. Error de tipo 1 y error de tipo 2 en estadistica. ¿Que tanto estamos dispuestos a aceptar estos errores de clasificación? 
+Metricas: Ver en PPT: 
+
+True Positive (TP) / False Positive (FP) / False Negative (FN) / True Negative (TN)
+
+- Precisión = TP / (TP + FP) : Comparar contra la predicción
+- Recall = TP / (TP + FN) : Comparar contra la realidad
+- Accuracy = (TP + TN) / (TP+ FP + FN + TN)
+
+Existen algoritmos que rankean a los distintos algoritmos de clasificación para un problema en especifico y que nos permitirá elegir que algoritmo es mas apropiado para nuestro problema. 
+
+**Interpretación del modelo**
+
+El estudio de las variables que afectan al modelo. Es casi tan importante como la selección del algoritmo. Existen algoritmos ya definidos para poder establecer que variables son mas importantes en un modelo. Esto se debe definir o pre definir al menos en el Analisis exploratorio de datos o EDA. **Ver algoritmo SHAP**
+
+**Casos de uso de Machine Learning en Meli**
+
+**Business Case Transport Tagets**: Como puedo aumentar la base de usuarios que hacen recargas de tarjetas de transporte mediante mercado pago. ¿Que usuario es mas probable que haga recarga de estas tarjetas? Tecnica: usar los usuarios mas parecidos a aquellos que ya hayan hecho recargas a las tarjetas de transporte. Luego busco entre todos los demas usuarios cuales tienen caractericas parecidas y le asigno un grado de probabilidad a cada usuario segun su parecido con quien ya usa la tarjeta. Es un calculo de probabilidad para luego poder hacer campañas especificas sobre los que tiene mayor probabilidad de recargar las tarjetas con Mercado Pago. 
+
+Dataiku es un FrontEnd para poder hacer Machine Learning (clasificación por ejemplo) sin escribir codigo necesariamente. 
+
+**Business Case Points**: Como puedo saber si un vendedor que adquiere nuestro point va a seguir usandolo en el mediano y largo plazo o no. Por ejemplo, viendo la cantidad de ventas que hizo en un Q contra las del proximo Q. Si las mismas fueron al menos un 75% de las del Q pasado entonces seguramente lo siga usando, pero si es menos probablemente no logremos retenerlo y sea un churn. 
+
 
 
 

@@ -218,7 +218,7 @@ Tecina de Feature Engineering mas usada en Meli:
 
 -------------------------------------------------------
 
-# 4° Season: Data Science / Classification Algoriths
+# 4° Season: Clasificación (Aprendizaje supervisado)
 
 Problemas a abordar en Machine Learning. 
 
@@ -284,6 +284,51 @@ El estudio de las variables que afectan al modelo. Es casi tan importante como l
 Dataiku es un FrontEnd para poder hacer Machine Learning (clasificación por ejemplo) sin escribir codigo necesariamente. 
 
 **Business Case Points**: Como puedo saber si un vendedor que adquiere nuestro point va a seguir usandolo en el mediano y largo plazo o no. Por ejemplo, viendo la cantidad de ventas que hizo en un Q contra las del proximo Q. Si las mismas fueron al menos un 75% de las del Q pasado entonces seguramente lo siga usando, pero si es menos probablemente no logremos retenerlo y sea un churn. 
+
+------------------------------------------------------
+
+## 5° session: Clustering (Aprendizaje no-supervisado)
+
+Vamos a tratar de encontrar nosotros una estructura en los datos para **inferir una buena etiqueta**. No viene dada de antemano como en los algoritmos de clasificación. 
+
+Los algoritmos mas usados son los de **clustering**. Son algoritmos que buscan similitudes entre los datos que recibe para luego armar un sistema de clasificación (por tipo de fruta, por color, por tamaño, etc.). Se pueden armar muchos **clustering** distintos del mismo input. 
+
+Tambien existen un montón de **algoritmos** y de **librerías** que tienen estos algoritmos para hacer clustering. 
+
+Un buen algoritmo de clustering tendría que:
+
+- Tener a los elementos dentro de un cluster juntos y apretados
+- Cada cluster debería estar separado tanto como fuera posible. 
+
+Esto no ocurre en la vida real y los clustering terminan siendo mas debiles. 
+
+**Todos los algoritmos de clustering necesitan que les digamos cuantos clusters queremos.** 
+
+- ¿Que es lo que define a un cluster? 
+
+El centro o centroide que es lo que nos da las caracteristicas medias de un cluster. 
+
+Una librería clasica para usar algoritmos como el kmeans para clustering es **Scikit-learn de Python**.
+
+**kmeans** es un algoritmo muy util para identificar **outliers**. 
+
+### Metricas para definir que tan bueno es un cluster / Model evalutation
+
+1. Coeficiente **Silhouette**: A mas grande mejor es el algoritmo
+2. Metrica del codo ó tecnica de **elbow**: Buscamos donde se quiebra la relacion entre numeros de clusters e inercia (No la usen)
+3. **Calinski-Harabasz**
+4. Otra en la misma slide de la ppt
+
+### Casos de uso en Meli de algoritmos de clustering: 
+
+1. Fullfilment: ¿Como determinar que grupo de items nos van a dar un mejor margen de ganancia si los metemos en fullfilment? Distintas variables: precios, volumen, Si/shipments, ventas historicas, EBIT item id. Se probaron distintos algoritmos, kmeans (se basa en distancias que son super sensibles a valores extremos) se descartó, HBSCAN también se descartó porque generaba muchos clusters, CLARANS tuvo problemas de ejecución (ni siquiera terminaban de correr) y se optó por un algoritmo de tipo "Variable Distribution" que es un algoritmo mas simple, no tan cool, pero muy eficiente. Es mas discreto y lo hace mas interpretable. Se armaron 4 clusters (Strategic, Ideal, Low priority y Recomendable):
+
+<img src="./images/fbm_case.PNG">
+
+---------------------------------------------------
+
+
+
 
 
 

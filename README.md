@@ -327,12 +327,48 @@ Una librería clasica para usar algoritmos como el kmeans para clustering es **S
 
 ---------------------------------------------------
 
+## 6° session: Regression and Forecasting
 
+¿Que es la regresión? Una tecnica donde buscamos relacionar dos variables. Ejemplo: demanda y precio (la famosa elasticidad). Existen variables independientes y variables dependientes. 
 
+La regresión trabaja con variables dependientes de tipo continuo (númericas, pueden ir de - infinito a infinito). Y la clasificación trabaja con variables dependientes de tipo discreto (categoricas). 
 
+Dos tipos de regresión:
+1. Sobre eventos que ya sucedieron (Interpolation)
+2. Predicción de comportamiento (Extrapolation)
 
+La técnica mas común de regresión es la regresión lineal. Es decir, el incremento en la variable que quiero predecir es constante. Está muy lindo teoricamente pero no siempre es posible predecir un comportamiento con este modelo de regresión. En esos casos debemos recurrir a otros tipos de regresión. 
 
+Supuestos de la regresión lineal:
+1. Relación linearl entre las variables
+2. Varianza constante
+3. Independencias entre observaciones
 
+Cuando los mismos no se cumnplen tenemos otros modelos de regresión. Lo importante para seleccionar el modelo de regresión es conocer a fondo los datos para saber cual seleccionar. Por eso es aconsejable hacer un EDA (Exploratory Data Analysis) antes.
+
+**Modelos No Lineales:** 
+1. Tenemos modelos basados en arboles como el random forest
+2. CatBoost
+3. Light Gradient
+4. Huber Regressor
+5. Risge Regressión
+6. etc. 
+
+Uno de los KPI´s de exito de un modelo mas usado es el R2, aunque hay otros importantes como por ejemplo MAE, MSE, RMSE, RMSLE y MAPE
+
+**Forecasting** entonces es predecir el comportamiento futuro de una variable dependiente en función del comportamiento pasado y presente de la relación entre esa variable dependiente con otra y otras variables independientes. 
+
+- **Univariado**: Quiero predecir solamente el comportamiento futuro de una unica variable
+- **Multivariable**: Quiero predecir el comportamiento de dos o mas variables que pueden o no moverse relacionadas. Ejemplo: precio, stock y demanda o dolar, tasa de interes e inflación. 
+- **Series de tiempo**: Tratan de identificar una **tendencía** en primer termino, así como **ciclos** internos de esa tendencia. Por ejemplo, pese a que la tendencia sea positiva podemos encontrarnos con ciclos dentro donde se vuelve negativa. También podemos y debemos capturar **elementos estacionales** que afecten sobre determinada variable. Finalmente también podemos y debemos intentar identificar **perturbaciones**. Son las mas dificiles de hallar en un modelo. 
+
+Ver en PPT distintos tipos de algoritmos para estas predicciones. Entre ellos se mencionan las redes neuronales que son los algoritmos muy potentes que están detras de las inteligencias artificiales como GPT-4. 
+
+### Casos de uso de regresión en Meli: 
+
+1. Demand Planning Meli: Cuales son los productos de 1P que van a quedar sin stock para poder optimizar mis compras y por lo tanto mi espacio de almacenamiento. El output es una predicción de en que semana me voy a quedar sin stock de un producto en especifico. 
+
+---------------------------------------------------
 
 
 

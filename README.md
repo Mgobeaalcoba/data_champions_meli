@@ -459,3 +459,29 @@ Meli Use:
 1. Search IA para ayudar a ubicar documentacion, cursos, soporte a tickets, etc.
 2. Asistencia en armado de Querys detallando que es lo que necesito con lenguaje natural (proximamente)
 3. Ruidometro: detector de publicaciones que similan marcas de primera linea sin ser originales.
+
+---
+
+## Deep Learning
+
+Temas a profundizar en la PPT:
+
+1. Definition of DL
+2. Machine Learning vs Deep Learning
+3. Neural Network
+4. Deep Neural Network
+5. Neural Networks Architecture
+6. Algorithms and Metrics
+7. Meli use case A: Pricing
+8. Meli use case B: Anonymization
+
+---
+
+## MLOps | 02-08 | Alexis Peña
+
+Machine Learning Operations o MLOps (Tema que le queda aún mucho recorrido en Meli aunque ya se está comenzando a trabajar)
+
+1. Why MLOps
+2. (Ver agenda y contenido en la PPT)
+
+---
